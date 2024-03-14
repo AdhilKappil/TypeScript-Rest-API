@@ -1,5 +1,4 @@
 import express from 'express'
-import { protect } from '../middleware/authMiddleware'
 import { UserController } from '../controller/userController'
 
 const userController = new UserController()

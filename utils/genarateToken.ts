@@ -1,8 +1,7 @@
 import jwt, { Secret } from 'jsonwebtoken';
 import { Response } from 'express';
-import { Document } from 'mongoose';
 
-export const genarateToken = (res: Response, userId: Document) => {
+export const genarateToken = (res: Response, userId: string) => {
   console.log('token generating');
   const token = jwt.sign({ userId }, process.env.JWT_SECRET as Secret, {
     expiresIn: '30d',
