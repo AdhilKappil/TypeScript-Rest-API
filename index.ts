@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+
 import express,{Request, Response} from 'express'
 import cookieParser from 'cookie-parser'
 import router from './routes/userRoutes'
